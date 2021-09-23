@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import {
+  Switch,
+  Route,
+} from "react-router-dom";
+import GLobalStyle from './GlobalStyles';
+import ScrollToTheTop from './ScrollToTheTop'
+import HomePage from './pages/HomePage/HomePage';
+import PortfolioPage from './pages/PortfolioPage/PortfolioPage';
+import PricingPage from './pages/PricingPage/PricingPage';
+import AboutPage from './pages/AboutPage/AboutPage';
+import ContactPage from './pages/Contact/ContactPage';
+import Footer from './components/Footer/Footer';
+import Navbar from "./components/Navbar/Navbar";
+import Dropdown from "./components/Dropdown/Dropdown";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen)
+  }
+  return <>
+    <GLobalStyle />
+    <ScrollToTheTop />
+    <Navbar toggle={toggle} />
+    <Dropdown isOpen={isOpen} toggle={toggle} />
+    <Switch>
+      <Route exact path="/" component={HomePage} />
+      <Route path="/portfolio" component={PortfolioPage} />
+      <Route path="/pricing" component={PricingPage} />
+      <Route path="/about" component={AboutPage} />
+      <Route path="/contact" component={ContactPage} />
+    </Switch>
+    {/* <Footer /> */}
+  </>
 }
 
 export default App;
