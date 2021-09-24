@@ -31,9 +31,9 @@ function App() {
       <Route path="/portfolio" component={PortfolioPage} />
       <Route path="/pricing" component={PricingPage} />
       <Route path="/about" component={AboutPage} />
-      <Route path="/contact" component={ContactPage} />
+      {/* <Route path="/contact" component={ContactPage} /> */}
     </Switch>
-    {/* <Footer /> */}
+    <Footer />
   </>
 }
 

@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom'
 import { FaBars } from 'react-icons/fa'
 import { menuData } from '../../data/menuData'
 import './Navbar.css'
-import logo from '../../assets/logo.png'
 import { setFont, media } from '../../styles'
 
 

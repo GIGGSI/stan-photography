@@ -19,11 +19,11 @@ export const menuData = [
         title: 'About',
         link: '/about',
     },
-    {
-        id: 5,
-        title: 'Contact',
-        link: '/contact'
-    }
+    // {
+    //     id: 5,
+    //     title: 'Contact',
+    //     link: '/contact'
+    // }
 
 
 
