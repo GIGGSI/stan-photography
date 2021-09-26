@@ -1,24 +1,15 @@
 nav {
-  /* height: 55px; */
   display: flex;
-  /* justify-content: space-evenly; */
-  /* padding: 0.2rem 2rem; */
   z-index: 100;
-  /* position: fixed; */
-  height: 20vh;
+  height: 15vh;
   width: 100%;
   background-color: none;
 }
 @media screen and (max-width: 600px) {
   nav {
-   
     display: flex;
     justify-content: space-between;
     align-items: center;
     justify-items: center;
   }
-}
-
-.active-nav {
-  background: rgb(202, 202, 202);
 }

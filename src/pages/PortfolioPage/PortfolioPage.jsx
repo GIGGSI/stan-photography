@@ -76,6 +76,7 @@ const FirstRow = styled.div`
   ${media.tablet`
 display:flex;
 width:90%;
+height:100vh;
 `}
 `;
 const SecondRow = styled.div`
@@ -97,9 +98,8 @@ const SecondRow = styled.div`
   ${media.tablet`
   width:90%;
   margin-top: 0.5rem;
-display: grid;
-grid-template-columns:2.02fr 1fr;
-
+  display: grid;
+  grid-template-columns:2.02fr 1fr;
 `}
 `;
 
@@ -123,6 +123,7 @@ const ThirdRow = styled.div`
  display:flex;
  width:90%;
  margin-top: 0.5rem;
+ height:100vh;
 `}
 `;
 const FourthRow = styled.div`

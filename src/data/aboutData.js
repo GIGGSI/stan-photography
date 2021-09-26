@@ -2,6 +2,7 @@
 
 export const aboutData = [
     {
+        id: 1,
         imgUrl: 'https://scontent-sof1-2.xx.fbcdn.net/v/t31.18172-8/13734934_10210046035092420_7653829465363336329_o.jpg?_nc_cat=108&ccb=1-5&_nc_sid=730e14&_nc_ohc=9Xw8bMtRHGAAX-hpbdk&_nc_ht=scontent-sof1-2.xx&oh=9f9b0e269a8b3ca3d47303dbb25249f6&oe=61746B5C',
         title: 'ФОТОГРАФЪТ',
         paragpraphOne: 'Уви, историята ми не е от най-интересните и не започва с “Когато бях на 5г…”.',
@@ -9,6 +10,7 @@ export const aboutData = [
         className: false
     },
     {
+        id: 2,
         imgUrl: 'https://scontent-sof1-2.xx.fbcdn.net/v/t31.18172-8/13734934_10210046035092420_7653829465363336329_o.jpg?_nc_cat=108&ccb=1-5&_nc_sid=730e14&_nc_ohc=9Xw8bMtRHGAAX-hpbdk&_nc_ht=scontent-sof1-2.xx&oh=9f9b0e269a8b3ca3d47303dbb25249f6&oe=61746B5C',
         title: 'ФОТОГРАФЪТ',
         paragpraphOne: 'Уви, историята ми не е от най-интересните и не започва с “Когато бях на 5г…”.',
@@ -16,6 +18,7 @@ export const aboutData = [
         className: true
     },
     {
+        id: 3,
         title: 'ДА НАПРАВИМ НЕЩО ЗАЕДНО',
         paragpraphOne: 'Живея в София, но това никога не ме е спирало да снимам в цяла България и в различни точки на света.',
         className: false

@@ -6,7 +6,6 @@ import { useSelector } from "react-redux";
 
 const AboutPage = () => {
   const { aboutData } = useSelector((state) => state.about);
-  console.log(aboutData);
   return (
     <SecTion>
       <HeaderSection>
@@ -47,25 +46,22 @@ const AboutPage = () => {
 const HeaderSection = styled.div`
   width: 85%;
   margin: 0 auto;
-
   ${media.tablet`
-  width: 70%;
   margin-top: 3rem;
   margin-bottom: 3rem;
   `}
 `;
 const Container = styled.div`
-  padding: 6rem calc((100vw - 1300px) / 3);
+  /* padding: 6rem calc((100vw - 1300px) / 3); */
   display: grid;
   align-items: center;
   justify-content: center;
-  row-gap: 1rem;
 
   /*mobie veiw*/
   ${media.tablet`
 margin-top:5rem;
-grid-row-gap:3rem;
-padding: 0rem 4rem;
+grid-row-gap:1rem;
+padding: 0rem 2rem;
 .reverse{
     display: flex;
   flex-direction: row-reverse;
@@ -76,7 +72,7 @@ const ContainerInfo = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   .text__info p {
-    padding-top: 3rem;
+    padding-top: 1rem;
   }
   h3 {
     margin-bottom: 2rem;
@@ -85,6 +81,8 @@ const ContainerInfo = styled.div`
 
   ${media.tablet`
 display: flex;
+justify-content: center;
+align-items:center;
 `}
 `;
 
@@ -95,19 +93,18 @@ const TextWrapper = styled.div`
     margin: 1.5rem;
   }
   ${media.tablet`
-width: 50%;
-
+   width: 50%;
 `}
 `;
 const ImageWrapper = styled.div`
   width: 100%;
-
   img {
     width: 100%;
     height: 100%;
   }
   ${media.tablet`
-width: 50%;
+  width: 50%;
+  min-width: 400px;
 `}
 `;
 

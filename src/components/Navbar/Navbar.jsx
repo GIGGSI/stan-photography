@@ -66,8 +66,6 @@ const MenuBars = styled(FaBars)`
 const NavMenu = styled.div`
   display: flex;
   align-items: center;
-  /* margin-right:-48px; */
-
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -75,32 +73,18 @@ const NavMenu = styled.div`
 
 const NavMenuLinks = styled(Link)`
   ${NavLink}
-  text-transform:uppercase;
+  /* text-transform:uppercase; */
   padding-bottom: 10px;
-
-  /* margin:1rem 0; */
   &:hover {
     border-bottom: 1px solid white;
   }
 `;
 
 const Navbar = ({ toggle, className }) => {
-  const [navbar, setNavbar] = useState(false);
   const [data, setData] = useState(menuData);
-
-  const changeBackground = () => {
-    if (window.scrollY >= 530) {
-      setNavbar(true);
-    } else {
-      setNavbar(false);
-    }
-  };
-  window.addEventListener("scroll", changeBackground);
-
   return (
-    <nav className={navbar ? "active-nav" : null}>
+    <nav>
       <Logo to="/">
-        {/* <img src={logo} alt="logo bonitas" /> */}
         <h3>Stanislav Kehayov</h3>
       </Logo>
       <MenuBars onClick={toggle} />

@@ -51,13 +51,9 @@ const Footer = () => {
 };
 
 export const Container = styled.div`
-  padding: 50px 30px;
-  background: radial-gradient(circle, rgb(19, 19, 21) 0%, rgb(18, 17, 15) 100%);
-  /* background:#131315; */
 
-  @media (max-width: 1000px) {
-    padding: 50px 30px;
-  }
+  padding-top:2rem;
+  background: radial-gradient(circle, rgb(19, 19, 21) 0%, rgb(18, 17, 15) 100%);
 `;
 
 export const Wrapper = styled.div`
