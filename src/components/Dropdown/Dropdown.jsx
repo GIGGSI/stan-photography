@@ -48,7 +48,6 @@ const DropdownLink = styled(Link)`
   color: ${setColor.mainBlack};
   font-size: 1.5rem;
   text-decoration: none;
-  text-transform: uppercase;
   cursor: pointer;
   &:hover {
     color: ${setColor.primaryColor};

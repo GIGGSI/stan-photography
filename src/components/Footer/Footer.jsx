@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { setColor } from "../../utils/styles";
+import { setColor, media } from "../../utils/styles";
 import { FaPhoneAlt } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { SiFacebook, SiInstagram } from "react-icons/si";
@@ -12,31 +12,24 @@ const Footer = () => {
       <Wrapper>
         <Row>
           <Column>
-            <Title>За Контакти</Title>
-            <Paragrapht>Stanislav Kehayov</Paragrapht>
             <Paragrapht>
               <FaPhoneAlt /> +359899803636
             </Paragrapht>
+          </Column>
+          <Column>
             <Paragrapht>
               <AiOutlineMail /> falkoneti73@gmail.com
             </Paragrapht>
           </Column>
           <Column>
-            <Links to="/portfolio">Portfolio</Links>
-            <Links to="/about">About</Links>
-            <Links to="/Pricing">Pricing</Links>
-          </Column>
-          <Column>
-            <Links to="/">
-              {" "}
-              <Title>Stan Photography</Title>
-            </Links>
             <AncorTag
               href="https://www.facebook.com/stanislav.kehajov"
               target="_blank"
             >
               <SiFacebook /> Stanislav Kehajov
             </AncorTag>
+          </Column>
+          <Column>
             <AncorTag
               href="https://www.instagram.com/stanislav_kehajov/"
               target="_blank"
@@ -51,16 +44,20 @@ const Footer = () => {
 };
 
 export const Container = styled.div`
-
-  padding-top:2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: -1.2rem;
   background: radial-gradient(circle, rgb(19, 19, 21) 0%, rgb(18, 17, 15) 100%);
+  ${media.tablet`
+  margin-top: -0.3rem;
+  `}
 `;
 
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 `;
 
@@ -74,7 +71,6 @@ export const Column = styled.div`
 export const Row = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-gap: 20px;
 
   @media (max-width: 1000px) {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -83,7 +79,7 @@ export const Row = styled.div`
 
 export const Links = styled(Link)`
   color: #fff;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   font-size: 18px;
   text-decoration: none;
 
@@ -96,7 +92,6 @@ export const Links = styled(Link)`
 export const Title = styled.h3`
   font-size: 1.4rem;
   color: ${setColor.mainWhite};
-
   font-weight: bold;
 `;
 export const Paragrapht = styled.p`

@@ -8,7 +8,7 @@ const HomePage = () => {
     <Section>
       <ImageWrapper>
         <img
-          src="https://scontent-sof1-2.xx.fbcdn.net/v/t1.6435-9/42819209_10217332566491151_5770427212310249472_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=J7dG6tFppDcAX9HvXnd&tn=UsKch1MahQJ9nke0&_nc_ht=scontent-sof1-2.xx&oh=27150d2d5428c4f62c7eae179042957b&oe=6175321E"
+          src="https://scontent-sof1-2.xx.fbcdn.net/v/t1.6435-9/34199906_10216401209847817_7507809021902979072_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=irL-yWnpHg0AX9mOEpK&_nc_ht=scontent-sof1-2.xx&oh=0995685aeb82f72b55a2067a9bcf2278&oe=617337B8"
           alt="home image"
         />
       </ImageWrapper>
@@ -18,13 +18,14 @@ const HomePage = () => {
 
 const ImageWrapper = styled.div`
   width: 100%;
-  height: 65vw;
+  /* height: 65vw; */
   margin: 0 auto;
   img {
     width: 100%;
   }
   ${media.tablet`
-  width: 100%;
+  width: 60%;
+  height: 100%
 `}
 `;
 
