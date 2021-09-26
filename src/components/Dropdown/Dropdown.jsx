@@ -13,11 +13,11 @@ const DropdownContainer = styled.div`
   background: rgb(202, 202, 202, 1);
   display: grid;
   align-items: center;
+  justify-content: center;
   top: 0;
   left: 0;
   transition: 0.3s ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
-
   top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
 `;
 
@@ -38,29 +38,18 @@ const CloseIcon = styled(FaTimes)`
 const DropdownWrapper = styled.div``;
 
 const DropdownMenu = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 40px);
   text-align: center;
-
-  @media screen and (max-width: 480px) {
-    grid-template-rows: repeat(14, 45px);
-  }
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
 `;
 
 const DropdownLink = styled(Link)`
-  display: flex;
   color: ${setColor.mainBlack};
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
   font-size: 1.5rem;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
-  transition: 0.2s ease-out;
-  /* padding-top:3rem; */
-
   &:hover {
     color: ${setColor.primaryColor};
   }

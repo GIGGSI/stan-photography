@@ -45,10 +45,14 @@ const AboutPage = () => {
 };
 
 const HeaderSection = styled.div`
-  width: 70%;
+  width: 85%;
   margin: 0 auto;
+
+  ${media.tablet`
+  width: 70%;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  `}
 `;
 const Container = styled.div`
   padding: 6rem calc((100vw - 1300px) / 3);
@@ -56,13 +60,12 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   row-gap: 1rem;
-  padding: 0rem 4rem;
 
   /*mobie veiw*/
   ${media.tablet`
 margin-top:5rem;
 grid-row-gap:3rem;
-
+padding: 0rem 4rem;
 .reverse{
     display: flex;
   flex-direction: row-reverse;

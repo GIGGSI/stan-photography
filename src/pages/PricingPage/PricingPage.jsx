@@ -37,7 +37,6 @@ const PricingPage = () => {
             <div>
               <h3>{item.title}</h3>
             </div>
-
             <p>
               {" "}
               <BsDot /> {item.subTitleOne}

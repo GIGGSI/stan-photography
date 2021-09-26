@@ -58,7 +58,7 @@ const PortfolioPage = () => {
   );
 };
 const FirstRow = styled.div`
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   gap: 0.5rem;
   div {
@@ -75,13 +75,13 @@ const FirstRow = styled.div`
   }
   ${media.tablet`
 display:flex;
+width:90%;
 `}
 `;
 const SecondRow = styled.div`
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   gap: 0.5rem;
-  margin-top: 0.5rem;
   div {
     width: 100%;
   }
@@ -95,16 +95,18 @@ const SecondRow = styled.div`
     }
   }
   ${media.tablet`
+  width:90%;
+  margin-top: 0.5rem;
 display: grid;
 grid-template-columns:2.02fr 1fr;
+
 `}
 `;
 
 const ThirdRow = styled.div`
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   gap: 0.5rem;
-  margin-top: 0.5rem;
   div {
     width: 100%;
   }
@@ -118,14 +120,15 @@ const ThirdRow = styled.div`
     }
   }
   ${media.tablet`
-display:flex;
+ display:flex;
+ width:90%;
+ margin-top: 0.5rem;
 `}
 `;
 const FourthRow = styled.div`
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   gap: 0.5rem;
-  margin-top: 0.5rem;
   div {
     width: 100%;
   }
@@ -140,8 +143,10 @@ const FourthRow = styled.div`
     }
   }
   ${media.tablet`
-display: grid;
-grid-template-columns:1fr 2.02fr;
+  width:90%;
+  margin-top: 0.5rem;
+  display: grid;
+  grid-template-columns:1fr 2.02fr;
 `}
 `;
 
